@@ -24,7 +24,6 @@ BOMS = [
     # Optional special cases for corrupted Windows outputs:
     (b"\xfe\xfe\xbf",     "UTF-8 corrupt"),
 ]
-]
 
 def detect_bom(data: bytes) -> tuple[int, str]:
     """Return (bom_length, bom_name). 0 length means no BOM."""
